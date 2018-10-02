@@ -2,47 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Promotional</title>
+    <title>Javascript MiniProjs</title>
+    <Script src="myScript.js"></Script>
+
+
 </head>
 <body>
-<h1 align="center" style="font-size: 70px">My Promotional</h1>
-
-<link rel="stylesheet" href="background.css">
-
-
-<!-- Next 6 lines are from W3schools.com-->
-<!-- Top navigation -->
-<div class="navbar">
-    <a class="active" href="index.html">Home</a>
-    <a href="interests.html">Interests</a>
-    <a href="videos.html">Videos</a>
-</div>
-
-<!--Image from Pinterest.com-->
-<div class="row">
-    <div class="column">
-        <img src="https://i.pinimg.com/originals/0c/eb/c1/0cebc1df2ce7d1ee492bb101d674781e.jpg" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="http://salsainhawaii.com/wp-content/uploads/2014/06/Lanikai.jpg" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Villahermosa.Iglesia_de_la_Concepci%C3%B3n_4.jpg" style="width:100%">
-    </div>
-</div>
+<!--further organize content with regard to javascript by creating 'forms' on a nHTML doc-->
+<form name="conditional">
+    <h4>Results for Conditional Statements</h4>
+    <br><br>
+    Result: <input type="text" readonly="true" name="result" placeholder="...waiting" size="45">
+    <br><br>
+    <button type="button" onclick="document.conditional.result.value=wordMatch()">WordMatch</button>
+    <button type="button" onclick="document.conditional.result.value=strictEqual()">StrictEqual</button>
+    <button type="button" onclick="document.project1.result.value=greaterNum()">WordMatch</button>
 
 
-<div class="row">
-    <div class="column">
-        <font size="5.5">This summer, I went to South Haven, Michigan. This trip was probably one of the most exciting ones since Hawaii. There is so much to do there and the sunsets are beautiful, like the one you see above. </font>
-    </div>
-    <div class="column">
-        <font size="5.5">On my trip to Hawaii, we stopped at Lanikai Beach which is in Oahu and is one of the best beaches in the world. The sand is like powdered sugar and the ocean is actually blue. </font>
-    </div>
-    <div class="column">
-        <font size="5.5">This place is Villahermosa, Mexico. This is an important place and event in my life because this is where my grandfather was buried. This was the first time someone close to me has passed away and also in another country. The trip there was also the first time I have left the country and it was a beautiful place. </font>
-    </div>
-</div>
+</form>
+
+
+<form name="project1">
+    <h4>Mini-Project 1</h4>
+    First number: <input type="text" name="input1" placeholder="type first number here..">
+    <br><br>
+    Second number: <input type="text" name="input2" placeholder="type second number here..">
+<br><br>
+    Result: <input type="text" name="result" readonly="true" placeholder="...waiting" size="45">
+</form>
+<br><br>
+
+ <form name="project2">
+        <h4>Language Translator</h4>
+     <br><br>
+     Type in one of the following language codes: 'kr' - Korean, 'ru' - Russian, 'de' - German, 'pl' - Polish, 'en' - English
+     <input name="input1" type="text">
+     <br><br>
+     Result: <input name="result" type="text" readonly="true">
+<br><br>
+     <button type="button" onclick="document.project2.result.value=helloWorld()">Translate!</button>
+ </form>
+<br><br>
+
+<form name="project3">
+    <h4>Assign Grade</h4>
+    <br><br>
+    Type in the percentage
+    <input name="input1" type="text">
+    <br><br>
+    Result: <input name="result" type="text" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()">Grade</button>
+</form>
+<br><br>
+<form name="project4">
+    <h4>Word Pluralizer</h4>
+    <br><br>
+    Type a quantity:
+    <input name="num1" type="text">
+    <br><br>
+    Type a noun:
+    <br>
+    <input name="word1" type="text">
+    <br><br>
+
+    Result: <input name="result" type="text" readonly="true" style="border-style: none">
+    <br><br>
+    <button type="button" onclick="document.project4.result.value=pluralize()">PLURAL IT!</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
