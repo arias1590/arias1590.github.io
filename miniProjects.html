@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Project</title>
+    <Script src="miniProjects.js"></Script>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+<h1 align="center" style="font-size: 70px">Mini Projects</h1>
+<div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="interests.html">Interests</a>
+    <a href="videos.html">Videos</a>
+    <a href="miniProjects.html">Mini Projects</a>
+</div>
+
+<form name="project1">
+    <h4 style="font-size: 20px">Temperature Bug</h4>
+    <br><br>
+    Type a temperature:
+    <input name="input1" type="text">
+    <br><br>
+    Result: <input name="result" type="text" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.project1.result.value=temperatureBug()">Click for Season</button>
+</form>
+<br><br>
+
+<form name="project2">
+    <h4 style="font-size: 20px">Calorie Counter</h4>
+    <br><br>
+    Type a number (minutes) and activity: '10 basketball', '20 basketball', '30 basketball', '40 basketball', '50 basketball', '60 basketball',
+    <br>'10 swimming', '20 swimming', '30 swimming', '40 swimming', '50 swimming', '60 swimming',
+    <br>'10 kayaking', '20 kayaking', '30 kayaking', '40 kayaking', '50 kayaking', '60 kayaking'.
+    <input name="input1" type="text">
+    <br><br>
+    Calories Burned:<input name="result" type="text" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.project2.result.value=calorieCounter()"> Click for Calories</button>
+</form>
+<br><br>
+
+<form name="project3">
+    <h4 style="font-size: 20px">Assign Grade</h4>
+    <br><br>
+    Type in the percentage
+    <input name="input1" type="text">
+    <br><br>
+    Result: <input name="result" type="text" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()">Click for Grade</button>
+</form>
+<br><br>
+
+
+
+
+
+<!--
+<form name="project5">
+    <h4 style="font-size: 20px">Calorie Counter</h4>
+    <select id="myList">
+        <option>Walking</option>
+        <option>Running</option>
+    </select>
+    <button type="button" onclick="project5.result.value=dropDown()">Click</button>
+    <input name="result">
+
+
+
+</form>
+
+-->
+
+
+<form name="project6">
+    <h4 style="font-size: 20px">Calorie Counter</h4>
+    <select id="workList">
+        <option value="walking 50 minutes">Walking 50 Minutes</option>
+        <option value="walking 40 minutes">Walking 40 Minutes</option>
+        <option value="walking 30 minutes">Walking 30 Minutes</option>
+        <option value="walking 20 minutes">Walking 20 Minutes</option>
+        <option value="walking 10 minutes">Running 10 Minutes</option>
+        <option value="running 50 minutes">Running 50 Minutes</option>
+        <option value="running 40 minutes">Running 40 Minutes</option>
+        <option value="running 30 minutes">Running 30 Minutes</option>
+        <option value="running 20 minutes">Running 20 Minutes</option>
+        <option value="running 10 minutes">Running 10 Minutes</option>
+        <option value="kayaking 50 minutes">Kayaking 50 minutes</option>
+        <option value="kayaking 40 minutes">Kayaking 40 minutes</option>
+        <option value="kayaking 30 minutes">Kayaking 30 minutes</option>
+        <option value="kayaking 20 minutes">Kayaking 20 minutes</option>
+        <option value="kayaking 10 minutes">Kayaking 10 minutes</option>
+    </select>
+    <button type="button" onclick="project6.result.value=returnWork()">Click</button>
+    <input name="result" size="40px">
+</form>
+
+
+
+</body>
+</html>
