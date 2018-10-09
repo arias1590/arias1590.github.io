@@ -1,9 +1,10 @@
 function temperatureBug()
 {
     var num1 = document.project1.input1.value;
+    var num2 = document.getElementById('spring').src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUO4Vv6ljuBT7n3uBtgRnjgLsU-GMwXfqc-Xa4xQKEm-ZddTudg"
     if (num1 >= 70)
     {
-        return "Summer"
+        return "Summer" + num2
     }
     else if (num1 >= 60)
     {
