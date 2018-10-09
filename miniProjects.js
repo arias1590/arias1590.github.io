@@ -1,14 +1,14 @@
 function temperatureBug()
 {
     var num1 = document.project1.input1.value;
-    var num2 = document.getElementById('spring').src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUO4Vv6ljuBT7n3uBtgRnjgLsU-GMwXfqc-Xa4xQKEm-ZddTudg"
+    
     if (num1 >= 70)
     {
-        return "Summer" + num2
+        return "Summer" 
     }
     else if (num1 >= 60)
     {
-        return "Spring"
+        return "Spring" + <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUO4Vv6ljuBT7n3uBtgRnjgLsU-GMwXfqc-Xa4xQKEm-ZddTudg">
     }
     else if (num1 >= 40)
     {
