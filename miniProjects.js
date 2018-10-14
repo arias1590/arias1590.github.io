@@ -8,7 +8,7 @@ function temperatureBug()
     }
     else if (num1 >= 60)
     {
-        return "Spring" + <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUO4Vv6ljuBT7n3uBtgRnjgLsU-GMwXfqc-Xa4xQKEm-ZddTudg">
+        return "Spring"
     }
     else if (num1 >= 40)
     {
