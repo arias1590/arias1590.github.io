@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Base Converter</title>
+   <Script src="baseConverter.js"></Script>
+
+
+</head>
+<body>
+<h1 align="center" style="font-size: 70px">Base Converter</h1>
+
+
+<link rel="stylesheet" href="background.css">
+
+<div class="navbar">
+   <a class="active" href="index.html">Home</a>
+   <a href="interests.html">Interests</a>
+   <a href="videos.html">Videos</a>
+   <a href="miniProjects.html">Mini Projects</a>
+   <a href="baseConverter.html">Base Converter</a>
+</div>
+
+<form name="tenToTwo">
+   <h4 style="font-size: 20px">Base Ten to Two</h4>
+   <p>Converts 117(base-10) to base-2</p>
+   <input type="text" id="results" placeholder="117" readonly="true">
+   <br><br>
+   <button type="button" onclick="document.tenToTwo.results.value=tenToSmall()">Convert To Binary</button>
+</form>
+
+
+
+<br><br>
+<form name="toBinary">
+   <h4 style="font-size: 20px">Base Two to Ten</h4>
+   <p>Converts 1110101 (base-2) back to base-10</p>
+   <input type="text" id="result" placeholder="1110101" readonly="true">
+   <br><br>
+   <button type="button" onclick="document.toBinary.result.value=smallToTen()">Convert To Base 10</button>
+</form>
+
+
+
+<br><br>
+<form name="twoToTen">
+   <h4 style="font-size: 20px">Base Two to Ten</h4>
+   <p>Converts entered value (base-2) to base-10</p>
+   Enter base-2 value:
+   <input type="text" id="toTen" name="toTen">
+   <br><br>
+   Conversion to base-10:
+   <input type="text" id="result1" readonly="true">
+   <br><br>
+   <button type="button" onclick="document.twoToTen.result1.value=twoToTen()">Convert Base-2 to Base-10</button>
+
+</form>
+
+
+
+
+</body>
+</html>
