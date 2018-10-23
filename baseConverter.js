@@ -42,7 +42,7 @@ function smallToTen(num, base) //convert base-2 number to base-10
 
 function twoToTen(num, base)
 {
-   var num1 = document.getElementById().value
+   var num1 = document.getElementById().value;
    base = 2; //original base
    tenNum = 0;
    numLength = num.toString().length;
