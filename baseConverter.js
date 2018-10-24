@@ -60,3 +60,19 @@ function twoToTen(num, base)
    }
    return tenNum;
 }
+
+
+function tenToBaseTwo(num, base) //convert a base-10 number to a smaller base
+{
+   num = document.tenToBaseTen.input1.value; //number to convert
+   base = 2; //destination base
+   smallNum = ""; 
+
+   while (num > 0) //continue looping while num isn't zero
+   {
+       smallNum = num%base + smallNum; //3%5 = 2.... % returns remainders
+       //setup num for the next iteration of the loop
+       num = Math.floor(num/2);
+   }
+   return smallNum;
+}
