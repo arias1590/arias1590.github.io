@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Libs</title>
+    <script src="madLibs.js"></script>
+    <script type="text/javascript">
+        function MadLibs()
+    {
+        words =[];
+
+        words.push(document.madLibs.adjective1.value);
+        words.push(document.madLibs.noun1.value);
+        words.push(document.madLibs.noun2.value);
+
+
+        words.push(document.form=madLibs());
+        adjective1.push(words);
+        noun1.push(words);
+
+
+
+        {
+            return ("The first day of school is going to be " + words[0])
+        }
+
+    }
+
+
+    function madLibs()
+    {
+        var stuff = []; stuff.push("cat", "dog");
+        for (var i=0; i<10; i++)
+        {
+            var response = prompt("Type a noun" + (i+1));
+            stuff.push(response);
+
+        }
+
+
+
+
+
+        return "this is a " + stuff[0] + stuff[1].big() + " and a this is that but not that."
+
+
+
+
+
+    }
+
+
+
+    </script>
+</head>
+<body>
+<link rel="stylesheet" href="background.css">
+
+<h1 align="center" style="font-size: 70px">Mad Libs</h1>
+<div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="interests.html">Interests</a>
+    <a href="videos.html">Videos</a>
+    <a href="miniProjects.html">Mini Projects</a>
+    <a href="baseConverter.html">Base Converter</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="madLibs.html">Mad Libs</a>
+    <a href="quiz.html">The Quiz</a>
+</div>
+<br><br>
+<form name="madLibs">
+
+Adjective:
+<input type="text" id="adjective1">
+<br><br>
+Noun:
+<input type="text" id="noun1">
+<br><br>
+Noun:
+<input type="text" id="noun2">
+<br><br>
+Verb:
+<input type="text" id="verb1">
+<br><br>
+Noun:
+<input type="text" id="noun3">
+<br><br>
+Noun:
+<input type="text" id="noun4">
+<br><br>
+Noun:
+<input type="text" id="noun5">
+<br><br>
+School Subject:
+<input type="text" id="schoolSubject">
+<br><br>
+Plural Noun:
+<input type="text" id="pluralNoun">
+<br><br>
+Adjective:
+<input type="text" id="adjective2">
+
+<br><br>
+
+<button type="button" onclick="">Story</button>
+</form>
+<br><br>
+
+The first day of school is going to be ____. I will pack mt backpack with _____ and _____, then ____ to the bus
+I can't wait to see my friends, ____ and _____. I hope my new teacher Mr./Mrs. _____ is really fun! My favorite
+class is ______, so I hope we learn about _____this year. I don't know about you, but I think this
+year is going to be ______!
+<button type="button" onclick="document.getElementById('story').innerHTML=madLibs()">Mad Libs</button>
+<p id="story"></p>
+
+
+
+
+</body>
+</html>
